@@ -1,0 +1,9 @@
+#notification-bell::after {
+    display: none!important;
+}
+
+#notification-bell > span {
+    top:0px;
+    left:16px;
+    position:absolute;
+}
