@@ -6,11 +6,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/style.css">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
     integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
 
   <title>zhs_admin template</title>
 </head>
@@ -38,17 +38,33 @@
             </svg>
             <span class="badge rounded-pill bg-primary" aria-label="notifications">3</span>  
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"> <svg class="bi mr-2" width="16" height="16" fill="currentColor"
-                  aria-hidden="true" focusable="false">
-                  <use xlink:href="images/bootstrap-icons.svg#person" />
-                </svg>
-                Profile</a></li>
-            <li><a class="dropdown-item" href="#"> <svg class="bi mr-2" width="16" height="16" fill="currentColor"
-                  aria-hidden="true" focusable="false">
-                  <use xlink:href="images/bootstrap-icons.svg#lock" />
-                </svg>
-                Authentication</a></li>
+          <ul class="dropdown-menu" id="notification-menu">
+            <div class="notification-heading p-2 border-bottom">
+              <div><strong>Notifications</strong> <a href="#" class="float-right">Clear all</a></div>
+            </div>     
+            <div class="notification-items overflow-auto">
+              <div class="notification-wrapper p-2 border-bottom">
+                <div class="notification-item">
+                  <div class="notification-item-title">Article updated 1 · day ago</div>
+                  <p class="notification-item-info"><a href="#">Abbot Johanson</a> edited <a href="#">Mary had a little lamb</a></p>
+                </div>
+              </div>
+              <div class="notification-wrapper p-2 border-bottom">
+                <div class="notification-item">
+                  <div class="notification-item-title">Article updated 1 · day ago</div>
+                  <p class="notification-item-info"><a href="#">Abbot Johanson</a> edited <a href="#">Mary had a little lamb</a></p>
+                </div>
+              </div>
+              <div class="notification-wrapper p-2">
+                <div class="notification-item">
+                  <div class="notification-item-title">Article updated 1 · day ago</div>
+                  <p class="notification-item-info"><a href="#">Abbot Johanson</a> edited <a href="#">Mary had a little lamb</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="notification-heading p-4 border-top">
+              <a href="#" class="position-absolute left-50 translate-middle">View all</a>
+            </div>   
           </ul>
         </li>
         <li class="nav-item dropdown">
