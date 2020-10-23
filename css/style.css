@@ -1,4 +1,4 @@
-#notification-bell::after {
+#notification-bell::after, #notification-options::after {
     display: none!important;
 }
 
@@ -12,14 +12,12 @@
     left: auto;
     right: 0;
     padding-top:0px;
-    padding-bottom:0px
+    padding-bottom:0px;
+    overflow:auto;
+    max-height: 375px;
 }
 
-.notification-items {
-    max-height: 300px;
-}
-
-.notification-wrapper:hover {
+.notification-item:hover {
     background-color: #f8f9fa;
 }
 
