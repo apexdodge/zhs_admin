@@ -21,6 +21,28 @@
     background-color: #f8f9fa;
 }
 
+.sidebar .nav-item:hover {
+    background-color: #f8f9fa;
+    color: rgba(0,0,0,.9);
+}
+
+.sidebar .nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px;
+    color: #f8f9fa;
+}
+
+.sidebar .nav-link:hover {
+    color: rgba(0,0,0,.9);
+}
+
+nav#sidebarMenu {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
 @media (min-width: 992px)  {
     #notification-menu {
         min-width: 375px;
