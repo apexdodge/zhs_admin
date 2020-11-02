@@ -13,7 +13,7 @@
 
   <title>zhs_admin template</title>
 </head>
-<nav class="navbar navbar-expand-lg navbar-light border-bottom border-2">
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top bg-white">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" width="81" height="24" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -128,24 +128,24 @@
 <body class="d-flex flex-column h-100">
   <div class="container-fluid">
     <div class="row">
-      <nav id="sidebarMenu" class="col-md-2 d-none d-md-block bg-dark sidebar collapse">
-        <div class="position-sticky">
+      <nav id="sidebarMenu" class="col-md-2 d-none d-md-block bg-light sidebar collapse border-right">
+        <div class="position-sticky fixed-nav fixed-top pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              <a class="nav-link active" aria-current="page" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
                 Dashboard
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
                 Orders
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
                 Orders
               </a>
             </li>
@@ -153,9 +153,9 @@
         </div>
       </nav>
   
-      <main class="col-md-9 ml-sm-auto col-lg-10 px-4"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+      <main class="col-md-10 ml-sm-auto col-lg-10 px-4"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Dashboard</h1>
+          <h1 class="h5">Dashboard</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
               <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
@@ -167,10 +167,6 @@
             </button>
           </div>
         </div>
-  
-        <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="1271" height="536" style="display: block; width: 1271px; height: 536px;"></canvas>
-  
-        <h2>Section title</h2>
         <div class="table-responsive">
           <table class="table table-striped table-sm">
             <thead>
