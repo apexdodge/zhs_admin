@@ -41,7 +41,7 @@ body {
 }
 
 .sidebar .nav-link.active > svg, .sidebar .nav-link.active {
-    color: #0d6efd;
+    color: #0a47a0;
     font-weight:700;
 }
 
